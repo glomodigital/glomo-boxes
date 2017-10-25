@@ -1,1 +1,1 @@
-export { default } from './ShowcaseTiles'
+export { default } from './ShowcaseTiles';
