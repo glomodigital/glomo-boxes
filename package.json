@@ -6,14 +6,14 @@
   "scripts": {
     "clean": "rm -rf dist && mkdir dist",
     "precommit": "lint-staged",
-    "prettify": "prettier --single-quote --tab-width 3 --trailing-comma es5 --write '{showcase_box}/**/*.{js,jsx,json,css}'",
+    "prettify": "prettier --single-quote --tab-width 3 --trailing-comma es5 --write 'src/**/*.{js,jsx,json,css}'",
     "prebuild": "npm run clean",
     "build": "env ENTRY=./src/index.js webpack --config webpack.config.js --env.prod --progress --colors --profile",
     "start": "env ENTRY=./src/app.js webpack-dev-server --config webpack.config.js --env.dev",
     "start-showcase-reel": "env ENTRY=./src/ShowcaseReel/index.js webpack-dev-server --config webpack.config.js --env.dev"
   },
   "lint-staged": {
-    "{showcase_box}/**/*.{js,jsx,json,css}": [
+    "src/**/*.{js,jsx,json,css}": [
       "prettier --single-quote --tab-width 3 --trailing-comma es5 --write",
       "git add"
     ]
