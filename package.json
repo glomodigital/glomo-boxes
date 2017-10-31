@@ -1,6 +1,6 @@
 {
   "name": "glomo_boxes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Glomo UI modules built in react",
   "main": "dist/bundle.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "start": "env ENTRY=./src/app.js webpack-dev-server --config webpack.config.js --env.dev",
     "start-showcase-reel": "env ENTRY=./src/ShowcaseReel/index.js webpack-dev-server --config webpack.config.js --env.dev",
     "postversion": "npm publish",
-    "prebublishOnly": "npm run build", 
+    "prebublishOnly": "npm run build",
     "postpublish": "git push --follow-tags"
   },
   "lint-staged": {
