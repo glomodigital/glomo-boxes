@@ -23,12 +23,7 @@ const devServer = {
 module.exports = env => {
    const sourceMap = env.prod ? 'source-map' : 'eval'
    
-   let plugins = [
-      new HtmlWebpackPlugin({
-         inject: true,
-         template: path.join(__dirname, 'public', 'index.html')
-      })
-   ]
+   let plugins = []
    
    if (env.prod) {
       plugins.push(
@@ -45,7 +40,11 @@ module.exports = env => {
 
    if (env.dev) {
       plugins.push(
-         new webpack.HotModuleReplacementPlugin()
+         new webpack.HotModuleReplacementPlugin(),
+         new HtmlWebpackPlugin({
+          inject: true,
+          template: path.join(__dirname, 'public', 'index.html')
+        })
       )
    }
 
