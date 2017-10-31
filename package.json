@@ -1,6 +1,6 @@
 {
   "name": "glomo_boxes",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Glomo UI modules built in react",
   "main": "dist/bundle.js",
   "scripts": {
