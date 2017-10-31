@@ -69,6 +69,14 @@ module.exports = env => {
       module: {
          rules: [
             {
+               test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+               loader: require.resolve('url-loader'),
+               options: {
+                 limit: 10000,
+                 name: 'static/media/[name].[hash:8].[ext]',
+               },
+            },
+            {
                test: /\.jsx?$/,
                exclude: /node-modules/,
                use: [{
@@ -85,7 +93,8 @@ module.exports = env => {
                      loader: 'css-loader',
                      options: {
                         sourceMap,
-                        importLoaders: 1
+                        importLoaders: 1,
+                        modules: true
                      }
                   },
                   {
