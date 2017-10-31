@@ -94,7 +94,7 @@ module.exports = env => {
                      options: {
                         sourceMap,
                         importLoaders: 1,
-                        modules: true
+                        // modules: true // breaks highlight.js theme style import
                      }
                   },
                   {
