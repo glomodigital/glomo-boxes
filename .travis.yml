@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "stable"
+before_install:
+  - npm install -g yarn --cache-min 99999999
+install:
+  - yarn
+deploy:
+  provider: npm
+  email: dev@globalmouth.com
+  api_key:
+    secure: lD0fo2UzwYBMxlubE4aoF0XTVzVSUJY8O+/kewjTUZNIlo1KLjFAEBO3c40s+kLnipZwn2Ngj4ieOs9sJI0gCKo+j41cUJ0YbIQltYMYtXChRjYBMZIFcvo0KJSuplU6Q9SRw6iBr2iqMPlxo/wFLbfhee+DIJhsDCRbIzu3kp3jGSFuJs89E/vlNVN3y4V/uFALU7ty+ErCQ/x3XmplODEtYRdhUljwyDl87LJ8M11JlCZlg8fHKkPtxxmRvTzXL6uSXsksg2H3CU470fticufcpZFgfrzXsq80RJiXIw605I4eh6Ygqe1icZhnmDWCpk9Ez6NN+m9gftF+EaZXXtHFKho/ROB/9yMRrPBX6ZV953oVCNcNjBAiq3deucAyXzqwRxJevX1gqW2WdLTh3XplGjVH2Uwke/dYDeJkRyxWiSWYDzshHVJQWhVoofEzy6kOETGD8pOrNwTV/ZWt3h6VyT5sJRUAVN1UUSjch6iV66KjDGcM3UF680VUV6Unxt4dQ5LgjATI7DR/SE8vUrBpv94AuAMdav88j0ineM0zk1oLj8jjKr6Ec9uoxowqoWTK1hRyHYbbrfOv4Gti3w7nBK6pH3gxsSGS1FeYdAX/CHkvW/nkCUTKrG6TA8MqVwemvpGHr6I/lWyoFy060VwUqmoMEfZgrw3/+qFEEk0=
+  on:
+    tags: true
+    repo: globalmouth/glomo-boxes
