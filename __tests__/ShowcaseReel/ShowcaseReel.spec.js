@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import ShowcaseReel from '../../src/ShowcaseReel'
+import { ShowcaseReel } from '../../lib'
 
 test('renders without crashing', () => {
    const component = renderer.create(
