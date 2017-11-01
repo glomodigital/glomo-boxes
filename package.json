@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/globalmouth/glomo-boxes"
   },
-  "main": "build/bundle.js",
+  "main": "build/index.js",
   "scripts": {
     "clean": "rm -rf build && mkdir build",
     "prestart": "ttab -a iTerm2 -w 'yarn test -- --watch'",

@@ -7,7 +7,6 @@ module.exports = () => {
       output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'index.js',
-        libraryName: 'glomo-boxes',
         libraryTarget: 'umd'
       },
       module: {
