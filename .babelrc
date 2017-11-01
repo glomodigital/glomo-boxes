@@ -1,11 +1,15 @@
 {
+  "ignore": ["node-modules/**"],
    "env": {
       "test": {
          "presets": ["env"]
       }
    },
    "presets": [
-      "env",
-      "react"
-   ]
+      "env"
+   ],
+   "plugins": [
+      "transform-object-rest-spread",
+      "transform-react-jsx"
+    ]
 }
