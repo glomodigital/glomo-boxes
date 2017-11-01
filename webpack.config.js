@@ -1,13 +1,14 @@
 const webpack = require('webpack')
 const path = require('path')
 
-module.exports = env => {
+module.exports = () => {
    return {
       entry: './src/index.js',
       output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'index.js',
-        libraryTarget: 'commonjs2'
+        libraryName: 'glomo-boxes',
+        libraryTarget: 'umd'
       },
       module: {
          rules: [
