@@ -3,11 +3,11 @@ const path = require('path')
 
 module.exports = () => {
    return {
-      entry: './src/index.js',
+      entry: './lib/index.js',
       output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'index.js',
-        libraryTarget: 'umd'
+        libraryTarget: 'commonjs2'
       },
       module: {
          rules: [
@@ -20,7 +20,7 @@ module.exports = () => {
                     presets: ['env']
                   }
                }],
-               include: path.resolve(__dirname, 'src'),
+               include: path.resolve(__dirname, 'lib'),
             },
          ]
       },

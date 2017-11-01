@@ -29,7 +29,7 @@ import React from 'react'
 import { render } from 'react-dom'
 
 // Glomo box component
-import ShowcaseReel from 'glomo-boxes/ShowcaseReel'
+import { ShowcaseReel } from 'glomo-boxes'
 
 const App = () => (
    <ShowcaseReel>
