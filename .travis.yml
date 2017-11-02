@@ -1,15 +1,22 @@
 language: node_js
 node_js:
-  - "lts/*"
+- lts/*
 before_install:
-  - npm install -g yarn --cache-min 99999999
+- npm install -g yarn --cache-min 99999999
 install:
-  - yarn
+- yarn
 deploy:
   provider: npm
   email: dev@globalmouth.com
   api_key:
     secure: lD0fo2UzwYBMxlubE4aoF0XTVzVSUJY8O+/kewjTUZNIlo1KLjFAEBO3c40s+kLnipZwn2Ngj4ieOs9sJI0gCKo+j41cUJ0YbIQltYMYtXChRjYBMZIFcvo0KJSuplU6Q9SRw6iBr2iqMPlxo/wFLbfhee+DIJhsDCRbIzu3kp3jGSFuJs89E/vlNVN3y4V/uFALU7ty+ErCQ/x3XmplODEtYRdhUljwyDl87LJ8M11JlCZlg8fHKkPtxxmRvTzXL6uSXsksg2H3CU470fticufcpZFgfrzXsq80RJiXIw605I4eh6Ygqe1icZhnmDWCpk9Ez6NN+m9gftF+EaZXXtHFKho/ROB/9yMRrPBX6ZV953oVCNcNjBAiq3deucAyXzqwRxJevX1gqW2WdLTh3XplGjVH2Uwke/dYDeJkRyxWiSWYDzshHVJQWhVoofEzy6kOETGD8pOrNwTV/ZWt3h6VyT5sJRUAVN1UUSjch6iV66KjDGcM3UF680VUV6Unxt4dQ5LgjATI7DR/SE8vUrBpv94AuAMdav88j0ineM0zk1oLj8jjKr6Ec9uoxowqoWTK1hRyHYbbrfOv4Gti3w7nBK6pH3gxsSGS1FeYdAX/CHkvW/nkCUTKrG6TA8MqVwemvpGHr6I/lWyoFy060VwUqmoMEfZgrw3/+qFEEk0=
+  skip_cleanup: true
   on:
     tags: true
     repo: globalmouth/glomo-boxes
+notifications:
+  slack:
+    secure: bjg+LVuU38pzrBG8qdDKsDTXPlPk/kgyYUEFtqHrZzCSw+6AwvCjwQJZI13ztzCvzlqrR4J5ZsMHwYIGB8hFRoNyzhxkY3f8xWeERsDfuYfz3Qbx70a2mIRW4b2kP5BUpaIXyxybcD0VvdzjWQ02U1vMQUOuz/Un79cB891cWmtaf8GiM5p0noRDfN+FCHigHDk/srNgo90v1MjOyFYd/JwCiKixUhlYskgkhSzscLvGWalvrEUyn4X8Ra87RLuLxHk/zUleL9iB+vFtXF/gNw/Wk1OJEqKIsccSqUuyEtJq2aM+5kkuIVSBw9LXYIUvslXumxirU9YZ9xoDxl7+6hl1JLl9epAphuBQ8JcAYGYL2er0agp2Pjl8J6+X0qyrfhY0RMVvoY0LM6xkOM4NIRU0b1Gik24G97QoaWUftMXx1orPDqDTKruYm9RoZBAtArKj2c/Yc/LGDWRaJfsBmkPJtGOQ6j12Q2vsP3LVVWi9PUmS3oWL/PftW9vzrgGaYz7psQpZW93rx9fOGSujrC2ky7Xn3XmQgTIT15rxOvJ7GPFhVuBrFr0//B1p3mzmOfF/sJetntpYSFCFfM3hZQNQNWPXQsuTElY2b0ce8VuZY95v2JaR+M1sq41SIbg2NmNdgXwGSP+znK+V/k9Wi6ZpHYSeizRm219JqxysG/k=
+    on_pull_requests: false
+    on_success: change # default: always
+    on_failure: always # default: always
