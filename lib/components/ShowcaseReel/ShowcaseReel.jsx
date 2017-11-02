@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ShowcaseReel = ({ value }) => {
-   return <h1>{value}</h1>;
+   return <p>hello {value}</p>;
 };
 
 ShowcaseReel.propTypes = {
