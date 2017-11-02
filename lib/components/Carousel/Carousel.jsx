@@ -1,5 +1,4 @@
-import React, { Component, cloneElement, Children } from 'react';
-import { findDOMNode } from 'react-dom';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from './Carousel.scss';
 
@@ -89,14 +88,6 @@ class Carousel extends Component {
                   console.log(e);
                });
          }
-      } else {
-         const { children } = this.props;
-         const items = [...children, children[0]];
-
-         this.setState({
-            carouselItems: items,
-            lastPosition: items.length - 1,
-         });
       }
    }
 
@@ -403,7 +394,6 @@ class Carousel extends Component {
 
 Carousel.defaultProps = {
    showIndicators: true,
-   showArrows: true,
    infiniteLoop: true,
    legendClassName: null,
    wrapperClassName: null,
@@ -426,7 +416,6 @@ Carousel.defaultProps = {
 };
 
 Carousel.propTypes = {
-   children: PropTypes.node,
    showIndicators: PropTypes.bool,
    infiniteLoop: PropTypes.bool,
    legendClassName: PropTypes.string,
@@ -450,7 +439,7 @@ Carousel.propTypes = {
          redirectUrl: PropTypes.string,
          itemId: PropTypes.number,
       })
-   ),
+   ).isRequired(),
    redirectCallback: PropTypes.func,
    onCarouselChange: PropTypes.func,
    onCarouselItemClick: PropTypes.func,

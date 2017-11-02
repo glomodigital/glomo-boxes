@@ -6,7 +6,12 @@
       }
    },
    "presets": [
-      "env",
+      ["env", {
+        "modules": false,
+        "useBuiltIns": true,
+        "debug": true,
+        "include": ["es6.promise"]
+      }],
       "react"
    ],
    "plugins": [
