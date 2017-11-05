@@ -42,7 +42,15 @@ render(<App/>, document.querySelector('#root'))
 
 ## Developing Locally
 
-This project does not come with a built in development environment for the time being. In that case, for local development we will need to go through some steps.
+This project comes with a built in development environment for the time being.
+
+```bash
+yarn start
+
+# open browser with localhost:8080
+```
+
+> However you may wish to use something like **create-react-app**, for local development we will need to go through some steps.
 
 1. Install `create-react-app` on your machine.
 
@@ -74,7 +82,7 @@ yarn start
 yarn link glomo-boxes
 
 # start the test app
-yarn start
+yarn run rollup
 ```
 
 5. Now you are able to make changes in **glomo-boxes** and see those changes reflected in the *CRA test app*. 

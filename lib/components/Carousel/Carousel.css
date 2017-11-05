@@ -1,10 +1,9 @@
-
-:local(.carousel-wrapper) {
+.carousel-wrapper {
    position: relative;
    overflow: hidden;
-   // background-color: red; //testing the widget
+   /* background-color: red; testing the widget */
 
-   // Only apply these styles inside our carousel
+   /* Only apply these styles inside our carousel */
    * {
       margin: 0;
       padding: 0;
@@ -15,7 +14,7 @@
       overflow: hidden;
       margin: auto;
       width: 100%;
-      transition: height .15s ease-in;
+      transition: height 0.15s ease-in;
       height: 100%;
       position: relative;
 
@@ -61,7 +60,6 @@
 
       & img {
          height: 100%;
-
       }
 
       .carousel-legend-wrapper {
@@ -85,5 +83,4 @@
          }
       }
    }
-
 }
