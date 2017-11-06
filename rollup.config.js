@@ -5,8 +5,8 @@ import babel from 'rollup-plugin-babel'
 import replace from 'rollup-plugin-replace'
 import uglify from 'rollup-plugin-uglify'
 import url from 'rollup-plugin-url'
-import clean from 'rollup-plugin-clean'
 import copy from 'rollup-plugin-copy'
+import filesize from 'rollup-plugin-filesize'
 
 // devserver requirements
 import serve from 'rollup-plugin-serve'
@@ -50,7 +50,6 @@ let rollupPlugins = [
 
    // Define environment variables in the library
    replace({
-      // exclude: NODE_MODULES_EXCLUDE,
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
    }),
 
@@ -75,7 +74,10 @@ let rollupPlugins = [
    }),
 
    commonjs({
-      include: 'node_modules/**'
+      include: 'node_modules/**',
+      namedExports: {
+         'node_modules/react/index.js': ['PropTypes', 'createElement', 'Component', 'PureComponent', 'cloneElement', 'Children'],
+      },
    }),
    
    // Allow transpilation of future JS
@@ -85,7 +87,10 @@ let rollupPlugins = [
    }),
 
    // limit imports or url() in project
-   url({ limit: 1000000 })
+   url({ limit: 1000000 }),
+
+   // show the output bundle size in the CLI
+   filesize()
 ]
 
 if (isProd) {

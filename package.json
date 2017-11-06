@@ -11,7 +11,7 @@
   },
   "main": "build/index.js",
   "scripts": {
-     "clean": "rm -rf build && mkdir build",
+    "clean": "rm -rf build && mkdir build",
     "lint": "eslint lib/**; exit 0",
     "lint:watch": "esw -w lib/**",
     "test:watch": "jest --watch",
@@ -78,6 +78,7 @@
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-commonjs": "^8.2.6",
     "rollup-plugin-copy": "^0.2.3",
+    "rollup-plugin-filesize": "^1.4.2",
     "rollup-plugin-fill-html": "^1.1.0",
     "rollup-plugin-livereload": "^0.6.0",
     "rollup-plugin-node-resolve": "^3.0.0",
