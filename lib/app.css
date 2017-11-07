@@ -1,3 +1,25 @@
+@import 'reset-css/reset.css';
+
+html,
+body {
+   padding: 0;
+   margin: 0;
+   font-family: 'Helvetica', sans-serif;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+#root {
+   margin: 22px;
+}
+
 .section {
    height: 100%;
    background-image: linear-gradient(114deg, #003439, #4e6f8c);
@@ -21,4 +43,12 @@
    max-width: 75%;
    margin: 0;
    padding: 0;
+}
+
+.example {
+   margin-top: 44px;
+
+   & h3 {
+      margin-bottom: 22px;
+   }
 }

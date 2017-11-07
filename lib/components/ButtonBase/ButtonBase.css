@@ -1,0 +1,28 @@
+.root {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+
+   /* Remove grey highlight */
+   -webkit-tap-highlight-color: transparent;
+   background-color: transparent; /* Reset default value */
+   outline: none;
+   border: 0;
+   border-radius: 0;
+   cursor: pointer;
+   user-select: none;
+   appearance: none;
+   text-decoration: none;
+   /* So we take precedent over the style of a native <a /> element. */
+   color: inherit;
+
+   &::-moz-focus-inner {
+      border-style: none; /* Remove Firefox dotted outline. */
+   }
+}
+
+.disabled {
+   pointer-events: none; /* Disable link interactions */
+   cursor: default;
+}

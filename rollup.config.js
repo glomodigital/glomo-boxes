@@ -20,6 +20,8 @@ import cssnext from 'postcss-cssnext'
 import precss from 'precss'
 import cssnano from 'cssnano'
 import nested from 'postcss-nested'
+import postcssImport from 'postcss-import'
+import postcssUrl from 'postcss-url'
 
 
 // Convert CJS modules to ES6, so they can be included in a bundle
@@ -31,11 +33,16 @@ const cssExportMap = {}
 const NODE_MODULES_EXCLUDE = 'node_modules/**'
 
 const output_dir = path.resolve(__dirname, 'build')
+const input_dir = isProd ? path.resolve(__dirname, 'lib', 'index.js') : path.resolve(__dirname, 'lib', 'app.js')
 
 import pkg from './package.json'
 const external = Object.keys(pkg.dependencies)
 
 let postCssPlugins = [
+   postcssImport({ 
+      root: 'node_modules'
+   }),
+   postcssUrl({ url: 'rebase' }),
    cssnext({ warnForDuplicates: false }),
    precss(),
    nested(),
@@ -76,7 +83,8 @@ let rollupPlugins = [
    commonjs({
       include: 'node_modules/**',
       namedExports: {
-         'node_modules/react/index.js': ['PropTypes', 'createElement', 'Component', 'PureComponent', 'cloneElement', 'Children']
+         'node_modules/react/index.js': ['PropTypes', 'createElement', 'Component', 'PureComponent', 'cloneElement', 'Children'],
+         'node_modules/react-dom/index.js': ['findDOMNode'],
       },
    }),
    
@@ -87,7 +95,7 @@ let rollupPlugins = [
    }),
 
    // limit imports or url() in project
-   url({ limit: 1000000 }),
+   url({ limit: 10 * 1024, emitFiles: true }),
 
    // show the output bundle size in the CLI
    filesize()
@@ -125,7 +133,7 @@ if (isProd) {
 }
 
 export default {
-   input: isProd ? path.resolve(__dirname, 'lib', 'index.js') : path.resolve(__dirname, 'lib', 'app.js'),
+   input: input_dir,
    output: {
       file: path.resolve(output_dir, 'index.js'),
       format: 'cjs',
