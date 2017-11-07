@@ -76,7 +76,7 @@ let rollupPlugins = [
    commonjs({
       include: 'node_modules/**',
       namedExports: {
-         'node_modules/react/index.js': ['PropTypes', 'createElement', 'Component', 'PureComponent', 'cloneElement', 'Children'],
+         'node_modules/react/index.js': ['PropTypes', 'createElement', 'Component', 'PureComponent', 'cloneElement', 'Children']
       },
    }),
    
@@ -118,11 +118,9 @@ if (isProd) {
       serve({
          contentBase: output_dir,
          historyApiFallback: false,
-         host: 'localhost',
-         port: 8080
       }),
 
-      livereload(),      
+      livereload({ watch: output_dir }),      
    ]
 }
 
