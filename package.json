@@ -1,6 +1,6 @@
 {
   "name": "glomo-boxes",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Glomo UI modules built in react",
   "bugs": {
     "url": "https://github.com/globalmouth/glomo-boxes/issues"
@@ -38,7 +38,7 @@
   "dependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"    
+    "react-dom": "^16.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
