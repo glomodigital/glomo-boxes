@@ -26,3 +26,8 @@
    pointer-events: none; /* Disable link interactions */
    cursor: default;
 }
+
+.spinner {
+   position: relative;
+   flex: 1;
+}

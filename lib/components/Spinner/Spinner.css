@@ -3,11 +3,11 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   position: relative;
 }
 
 .spinner-circle {
    stroke-dashoffset: '0%';
-   animation: progressCircle 1300ms ease-in-out infinite;
    stroke: currentColor;
    stroke-linecap: square;
    transition: all 1300ms;

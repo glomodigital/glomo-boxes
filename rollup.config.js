@@ -126,6 +126,7 @@ if (isProd) {
       serve({
          contentBase: output_dir,
          historyApiFallback: false,
+         port: 8080,
       }),
 
       livereload({ watch: output_dir }),      
