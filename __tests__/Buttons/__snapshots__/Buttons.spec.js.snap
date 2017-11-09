@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button.js component renders without crashing 1`] = `
+<button
+  className="root root"
+  disabled={false}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  role="button"
+  style={
+    Object {
+      "backgroundColor": undefined,
+      "border": "2px solid undefined",
+      "color": undefined,
+      "padding": "16px 88.76998202440868px",
+    }
+  }
+  type="button"
+>
+  <span
+    className="label"
+  >
+    I am a button
+  </span>
+</button>
+`;
+
+exports[`IconButton.js component renders without crashing 1`] = `
+<button
+  className="root root"
+  disabled={false}
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  role="button"
+  style={
+    Object {
+      "border": "1px solid black",
+      "height": 48,
+      "maxHeight": 48,
+      "maxWidth": 48,
+      "opacity": 1,
+      "transition": "opacity 300ms ease-in",
+      "width": 48,
+    }
+  }
+  type="button"
+>
+  <span
+    className="material-icons md-dark md-24"
+  />
+</button>
+`;

@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<div
+  className={null}
+>
+  <div
+    className="carousel-wrapper"
+    style={
+      Object {
+        "height": "330px",
+      }
+    }
+  >
+    <div
+      className="slider-wrapper"
+    >
+      <ul
+        className="slider"
+        style={
+          Object {
+            "height": "100%",
+          }
+        }
+      >
+        <li
+          className="carousel-item"
+          id="item-0"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          style={Object {}}
+        >
+          <div
+            style={
+              Object {
+                "backgroundColor": "blue",
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          />
+        </li>
+        <li
+          className="carousel-item"
+          id="item-1"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          style={Object {}}
+        >
+          <div
+            style={
+              Object {
+                "backgroundColor": "green",
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          />
+        </li>
+        <li
+          className="carousel-item"
+          id="item-2"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          style={Object {}}
+        >
+          <div
+            style={
+              Object {
+                "backgroundColor": "red",
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          />
+        </li>
+        <li
+          className="carousel-item"
+          id="item-3"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          style={Object {}}
+        >
+          <div
+            style={
+              Object {
+                "backgroundColor": "blue",
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          />
+        </li>
+      </ul>
+    </div>
+    <ul
+      className="control-dots"
+    >
+      <li
+        className="dot dot-selected"
+        onClick={undefined}
+        value={0}
+      />
+      <li
+        className="dot"
+        onClick={undefined}
+        value={1}
+      />
+      <li
+        className="dot"
+        onClick={undefined}
+        value={2}
+      />
+    </ul>
+  </div>
+</div>
+`;
