@@ -1,0 +1,14 @@
+.showcase-tile {
+   display: flex;
+   flex-direction: column;
+   padding: 7.5% 2.5% 2.5% 2.5%;
+   height: 100%;
+   width: 100%;
+
+   & .inner-content {
+      position: relative;
+   }
+}
+
+.showcase-divider {
+}
