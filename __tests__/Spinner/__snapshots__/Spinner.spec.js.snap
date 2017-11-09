@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner.js component renders without crashing 1`] = `
+<div
+  className="spinner"
+  style={
+    Object {
+      "color": undefined,
+      "display": "inline-block",
+      "height": 40,
+      "width": 40,
+    }
+  }
+>
+  <svg
+    style={
+      Object {
+        "animation": "rotateCircle 1733ms linear infinite",
+        "height": "100%",
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+        "transform": "rotate(-90deg)",
+        "width": "100%",
+      }
+    }
+    viewBox="0 0 40 40"
+  >
+    <circle
+      className="spinner-circle"
+      cx={20}
+      cy={20}
+      fill="none"
+      r={18}
+      strokeMiterlimit="20"
+      strokeWidth={4}
+      style={
+        Object {
+          "animation": "progressCircle 1300ms ease-in-out infinite",
+          "strokeDasharray": "1, calc((100% - 4px) * 3.141592653589793)",
+        }
+      }
+    />
+  </svg>
+</div>
+`;
