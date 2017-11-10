@@ -74,5 +74,6 @@
    }
    .button-container > a {
       max-width: none;
+      font-size: 14px;
    }
 }
