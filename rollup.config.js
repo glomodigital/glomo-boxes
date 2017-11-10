@@ -39,7 +39,7 @@ import pkg from './package.json'
 const external = Object.keys(pkg.dependencies)
 
 let postCssPlugins = [
-   postcssImport({ 
+   postcssImport({
       root: 'node_modules'
    }),
    postcssUrl({ url: 'rebase' }),
@@ -77,7 +77,6 @@ let rollupPlugins = [
       getExport (id) {
          return cssExportMap[id];
       },
-      extract: path.resolve(output_dir, 'main.css'),
    }),
 
    commonjs({
@@ -87,7 +86,7 @@ let rollupPlugins = [
          'node_modules/react-dom/index.js': ['findDOMNode'],
       },
    }),
-   
+
    // Allow transpilation of future JS
    babel({
       exclude: NODE_MODULES_EXCLUDE,
@@ -105,7 +104,7 @@ if (isProd) {
    rollupPlugins = [...rollupPlugins, uglify()]
 } else {
    rollupPlugins = [
-      ...rollupPlugins, 
+      ...rollupPlugins,
       copy({
          'public/index.html': 'build/index.html',
          'node_modules/highlight.js/styles/atom-one-dark.css': 'build/atom-one-dark.css',
@@ -129,7 +128,7 @@ if (isProd) {
          port: 8080,
       }),
 
-      livereload({ watch: output_dir }),      
+      livereload({ watch: output_dir }),
    ]
 }
 
