@@ -46,13 +46,14 @@
    flex-direction: row;
    justify-content: space-between;
    margin: 44px 0 0 0;
-   /*.profile-button {
-      padding: 14px 0;
-      max-width: 45%;
-      width: 230px;
-      font-size: 14px;
-      text-transform: uppercase;
-   }*/
+}
+
+.button-container > a {
+   max-width: 45%;
+   width: 230px;
+   font-size: 12px;
+   text-transform: uppercase;
+   text-align: center;
 }
 @media only screen and (min-width: 768px) {
    .profile-card-inner {
@@ -70,5 +71,8 @@
    .button-container {
       flex-direction: column;
       height: 130px;
+   }
+   .button-container > a {
+      max-width: none;
    }
 }
