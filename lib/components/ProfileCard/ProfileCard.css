@@ -27,6 +27,7 @@
    margin: 0 auto;
    position: relative;
    background-color: #c3c3c3;
+   overflow: hidden;
 }
 .image {
    position: absolute;
