@@ -5,7 +5,7 @@ before_install:
 - npm install -g yarn --cache-min 99999999
 install:
 - yarn
-before-deploy:
+before_deploy:
 - yarn run build
 deploy:
   provider: npm
