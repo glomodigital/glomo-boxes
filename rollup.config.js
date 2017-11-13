@@ -6,6 +6,7 @@ import replace from 'rollup-plugin-replace'
 import uglify from 'rollup-plugin-uglify'
 import url from 'rollup-plugin-url'
 import copy from 'rollup-plugin-copy'
+import execute from 'rollup-plugin-execute' // To replace copy plugin
 import filesize from 'rollup-plugin-filesize'
 
 // devserver requirements
@@ -39,7 +40,7 @@ import pkg from './package.json'
 const external = Object.keys(pkg.dependencies)
 
 let postCssPlugins = [
-   postcssImport({ 
+   postcssImport({
       root: 'node_modules'
    }),
    postcssUrl({ url: 'rebase' }),
@@ -86,7 +87,7 @@ let rollupPlugins = [
          'node_modules/react-dom/index.js': ['findDOMNode'],
       },
    }),
-   
+
    // Allow transpilation of future JS
    babel({
       exclude: NODE_MODULES_EXCLUDE,
@@ -104,12 +105,17 @@ if (isProd) {
    rollupPlugins = [...rollupPlugins, uglify()]
 } else {
    rollupPlugins = [
-      ...rollupPlugins, 
-      copy({
-         'public/index.html': 'build/index.html',
-         'node_modules/highlight.js/styles/atom-one-dark.css': 'build/atom-one-dark.css',
-         verbose: true
-      }),
+      ...rollupPlugins,
+      // copy({
+      //    'public/index.html': 'build/index.html',
+      //    'node_modules/highlight.js/styles/atom-one-dark.css': 'build/atom-one-dark.css',
+      //    verbose: true
+      // }),
+
+      execute([
+         'cp public/index.html build/index.html',
+         'cp node_modules/highlight.js/styles/atom-one-dark.css build/atom-one-dark.css',
+      ]),
 
       html({
          template: 'build/index.html',
@@ -128,7 +134,7 @@ if (isProd) {
          port: 8080,
       }),
 
-      livereload({ watch: output_dir }),      
+      livereload({ watch: output_dir }),
    ]
 }
 

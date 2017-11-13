@@ -4914,6 +4914,10 @@ rollup-plugin-copy@^0.2.3:
     colors "^1.1.2"
     fs-extra "^3.0.0"
 
+rollup-plugin-execute@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-execute/-/rollup-plugin-execute-1.0.0.tgz#cea6445ef5b2655253a6b0b859ecf7c6ef8d08f6"
+
 rollup-plugin-filesize@^1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/rollup-plugin-filesize/-/rollup-plugin-filesize-1.4.2.tgz#eebdf571217e2fe14ab14a6534bf21f771a053b1"

@@ -1,6 +1,6 @@
 {
   "name": "glomo-boxes",
-  "version": "1.2.0",
+  "version": "1.4.3",
   "description": "Glomo UI modules built in react",
   "bugs": {
     "url": "https://github.com/globalmouth/glomo-boxes/issues"
@@ -83,6 +83,7 @@
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-commonjs": "^8.2.6",
     "rollup-plugin-copy": "^0.2.3",
+    "rollup-plugin-execute": "^1.0.0",
     "rollup-plugin-filesize": "^1.4.2",
     "rollup-plugin-fill-html": "^1.1.0",
     "rollup-plugin-livereload": "^0.6.0",
