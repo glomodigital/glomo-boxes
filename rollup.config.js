@@ -6,6 +6,7 @@ import replace from 'rollup-plugin-replace'
 import uglify from 'rollup-plugin-uglify'
 import url from 'rollup-plugin-url'
 import copy from 'rollup-plugin-copy'
+import execute from 'rollup-plugin-execute' // To replace copy plugin
 import filesize from 'rollup-plugin-filesize'
 
 // devserver requirements
@@ -105,17 +106,22 @@ if (isProd) {
 } else {
    rollupPlugins = [
       ...rollupPlugins,
-      copy({
-         'public/index.html': 'build/index.html',
-         'node_modules/highlight.js/styles/atom-one-dark.css': 'build/atom-one-dark.css',
-         verbose: true
-      }),
+      // copy({
+      //    'public/index.html': 'build/index.html',
+      //    'node_modules/highlight.js/styles/atom-one-dark.css': 'build/atom-one-dark.css',
+      //    verbose: true
+      // }),
+
+      execute([
+         'cp public/index.html build/index.html',
+         'cp node_modules/highlight.js/styles/atom-one-dark.css build/atom-one-dark.css',
+      ]),
 
       html({
          template: 'build/index.html',
          filename: 'index.html',
          externals: [
-            { type: 'css', file: 'main.css', inject: 'head' },
+            // { type: 'css', file: 'main.css', inject: 'head' },
             { type: 'css', file: 'atom-one-dark.css', inject: 'head' },
             { type: 'js', file: 'index.js', inject: 'body' }
          ]
