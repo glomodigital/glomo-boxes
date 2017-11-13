@@ -71,13 +71,12 @@ let rollupPlugins = [
 
    // postcss for styles using numerous plugins for sass like syntax
    postcss({
-      sourcemap: true,
+      sourceMap: 'inline',
       plugins: isProd ? [...postCssPlugins, cssnano()] : postCssPlugins,
       getExportNamed: false,
       getExport (id) {
          return cssExportMap[id];
-      },
-      extract: path.resolve(output_dir, 'main.css'),
+      }
    }),
 
    commonjs({
@@ -116,7 +115,7 @@ if (isProd) {
          template: 'build/index.html',
          filename: 'index.html',
          externals: [
-            { type: 'css', file: 'main.css', inject: 'head' },
+            // { type: 'css', file: 'main.css', inject: 'head' },
             { type: 'css', file: 'atom-one-dark.css', inject: 'head' },
             { type: 'js', file: 'index.js', inject: 'body' }
          ]
