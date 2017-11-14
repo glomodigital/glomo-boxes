@@ -72,12 +72,12 @@ let rollupPlugins = [
 
    // postcss for styles using numerous plugins for sass like syntax
    postcss({
-      sourcemap: true,
+      sourceMap: 'inline',
       plugins: isProd ? [...postCssPlugins, cssnano()] : postCssPlugins,
       getExportNamed: false,
       getExport (id) {
          return cssExportMap[id];
-      },
+      }
    }),
 
    commonjs({
