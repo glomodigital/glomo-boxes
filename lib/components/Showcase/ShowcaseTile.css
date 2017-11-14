@@ -1,7 +1,12 @@
+.tile-wrapper {
+   overflow: hidden;
+   position: relative;
+}
+
 .showcase-tile {
    display: flex;
    flex-direction: column;
-   padding: 7.5% 2.5% 2.5% 2.5%;
+   // padding: 15% 15%;
    height: 100%;
    width: 100%;
 
