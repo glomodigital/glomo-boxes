@@ -1,6 +1,6 @@
 {
   "name": "glomo-boxes",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Glomo UI modules built in react",
   "bugs": {
     "url": "https://github.com/globalmouth/glomo-boxes/issues"
@@ -30,12 +30,12 @@
     ]
   },
   "prettier": {
-      "printWidth": 80,
-      "semi": false,
-      "singleQuote": true,
-      "trailingComma": "es5",
-      "tabWidth": 3
-   },
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "tabWidth": 3
+  },
   "author": "Owain Stratton",
   "license": "MIT",
   "peerDependencies": {
