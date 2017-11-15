@@ -1,6 +1,6 @@
 {
   "name": "glomo-boxes",
-  "version": "1.5.0",
+  "version": "1.6.1",
   "description": "Glomo UI modules built in react",
   "bugs": {
     "url": "https://github.com/globalmouth/glomo-boxes/issues"
@@ -19,15 +19,22 @@
     "start": "yarn run clean && yarn run rollup",
     "test": "jest",
     "precommit": "yarn run test && yarn run lint && lint-staged",
-    "prettify": "prettier --single-quote --tab-width 3 --trailing-comma es5 --write 'lib/**/*.{js,jsx,json,css}'",
+    "prettify": "find ./lib -name \"*.js\" | xargs yarn run prettier -- --write",
     "prebuild": "yarn run test && yarn run lint && yarn run clean",
     "build": "NODE_ENV=production rollup -c"
   },
   "lint-staged": {
     "lib/**/*.{js,jsx,json,css}": [
-      "prettier --single-quote --tab-width 3 --trailing-comma es5 --write",
+      "prettier --write",
       "git add"
     ]
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "tabWidth": 3
   },
   "author": "Owain Stratton",
   "license": "MIT",
