@@ -7,11 +7,13 @@
    top: 0;
    padding-top: 5%;
    z-index: 10;
-   width: 75%;
+   width: 60%;
    height: 100%;
+   visibility: visible;
+   transition: transform 0.2s ease-in;
 
    &--right {
-      right: -25%;
+      right: 0;
       background: linear-gradient(
          to left,
          rgba(255, 255, 255, 1),
@@ -19,12 +21,16 @@
       );
    }
    &--left {
-      left: -25%;
+      left: 0;
       background: linear-gradient(
          to right,
          rgba(255, 255, 255, 1),
          rgba(255, 255, 255, 0)
       );
+   }
+
+   &--hidden {
+      visibility: hidden;
    }
 }
 
