@@ -16,13 +16,13 @@ exports[`renders without crashing 1`] = `
       className="image-container"
     >
       <div
-        className="image-wrapper"
-      >
-        <img
-          className="image"
-          src=""
-        />
-      </div>
+        className="image"
+        style={
+          Object {
+            "backgroundImage": "url()",
+          }
+        }
+      />
     </div>
     <div
       className="text-container"

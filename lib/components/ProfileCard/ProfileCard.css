@@ -20,21 +20,14 @@
 .light-theme {
    color: #fff;
 }
-.image-wrapper {
-   width: 309px;
+.image {
+   width: 100%;
    height: 250px;
    max-width: 100%;
    margin: 0 auto;
-   position: relative;
-   background-color: #c3c3c3;
-   overflow: hidden;
-}
-.image {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 .title {
    opacity: 0.9;
@@ -56,18 +49,29 @@
    text-transform: uppercase;
    text-align: center;
 }
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+   .profile-card-inner {
+      width: 70%;
+   }
+}
 @media only screen and (min-width: 768px) {
    .profile-card-inner {
       max-width: 1057px;
-      padding: 105px 0;
+      padding: 105px 0 190px 0;
       flex-direction: row;
    }
    .image-container {
       flex: 1;
       margin: 0 40px 0 0;
    }
+   .image {
+      width: 309px;
+   }
    .text-container {
       flex: 1;
+   }
+   .title {
+      margin-top: 0;
    }
    .button-container {
       flex-direction: column;
@@ -75,6 +79,6 @@
    }
    .button-container > a {
       max-width: none;
-      font-size: 14px;
+      font-size: 18px;
    }
 }
