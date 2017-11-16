@@ -98,17 +98,17 @@ exports[`renders without crashing 1`] = `
     >
       <li
         className="dot dot-selected"
-        onClick={undefined}
+        onClick={[Function]}
         value={0}
       />
       <li
         className="dot"
-        onClick={undefined}
+        onClick={[Function]}
         value={1}
       />
       <li
         className="dot"
-        onClick={undefined}
+        onClick={[Function]}
         value={2}
       />
     </ul>
