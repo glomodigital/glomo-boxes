@@ -1,48 +1,20 @@
 .hex {
    position: relative;
+   clip-path: url(#myClip);
 }
-.hex-l {
-   width: 100%;
-   height: 100%;
-   transform: rotate(60deg);
-   visibility: hidden;
-   overflow: hidden;
+.hex-inner {
    position: absolute;
-}
-.hex-r {
-   width: 100%;
-   height: 100%;
-   transform: rotate(-120deg);
-   visibility: hidden;
-   overflow: hidden;
-   position: absolute;
-}
-.hex-content {
-   width: 100%;
-   height: 100%;
-   visibility: visible;
-   overflow: hidden;
-   transform: rotate(60deg);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.hex-cover {
+   left: 0;
+   top: 0;
    width: 100%;
    height: 100%;
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: rgba(0, 0, 0, 0.1);
-   transition: all 200ms ease;
 }
-.hex-image {
-   width: 100%;
-   height: 100%;
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-}
-.hex-icon {
+.icon {
    height: 40%;
+}
+.shadow {
+   filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.4));
 }
