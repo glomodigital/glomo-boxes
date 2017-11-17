@@ -1,7 +1,9 @@
 .hex {
    position: relative;
-   clip-path: url(#myClip);
+   width: 50%;
+   /* clip-path: url(#myClip); */
 }
+
 .hex-inner {
    position: absolute;
    left: 0;
