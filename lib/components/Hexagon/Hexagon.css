@@ -1,6 +1,4 @@
 .hex {
-   position: relative;
-   clip-path: url(#myClip);
 }
 .hex-inner {
    position: absolute;
@@ -17,4 +15,9 @@
 }
 .shadow {
    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.4));
+}
+.svg {
+}
+.polygon {
+   stroke: #999da3;
 }
