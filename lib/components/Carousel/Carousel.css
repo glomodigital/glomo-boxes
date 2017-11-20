@@ -3,6 +3,7 @@
     position: relative;
     width: 100%;
     margin: auto;
+    overflow: hidden;
 }
 
 .carousel-wrapper {
@@ -133,91 +134,56 @@
    }
 }
 
-.arrow-wrapper {
+.arrow {
    position: absolute;
    height: 100%;
    top: 0;
-   width: 44px;
+   width: 5%;
    display: flex;
    align-items: center;
-   justify-content: center;
    cursor: pointer;
    z-index: 10;
+   transition: all 0.3s ease-in;
 
    &--previous {
-      left: 0;
-      background: linear-gradient(
-         to right,
-         rgb(0, 0, 0, 0.2),
-         rgba(0, 0, 0, 0)
-      );
+      justify-content: flex-start;
+      left: 0%;
    }
 
    &--next {
-      right: 0;
-      background: linear-gradient(
-         to left,
-         rgb(0, 0, 0, 0.2),
-         rgba(0, 0, 0, 0)
-      );
+      justify-content: flex-end;
+      right: 0%;
    }
 
-   & button {
-      border: none;
-      margin: 0;
+   border: none;
+   margin: 0;
+   padding: 0;
+   overflow: visible;
+
+   background: transparent;
+
+   /* inherit font & color from ancestor */
+   color: inherit;
+   font: inherit;
+
+   /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+   line-height: normal;
+
+   /* Corrects font smoothing for webkit */
+   -webkit-font-smoothing: inherit;
+   -moz-osx-font-smoothing: inherit;
+
+   /* Corrects inability to style clickable `input` types in iOS */
+   -webkit-appearance: none;
+
+   &:focus { 
+      outline: 0;
+   }
+
+   /* Remove excess padding and border in Firefox 4+ */
+   &::-moz-focus-inner {
+      border: 0;
       padding: 0;
-      width: auto;
-      overflow: visible;
-
-      background: transparent;
-
-      /* inherit font & color from ancestor */
-      color: inherit;
-      font: inherit;
-
-      /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
-      line-height: normal;
-
-      /* Corrects font smoothing for webkit */
-      -webkit-font-smoothing: inherit;
-      -moz-osx-font-smoothing: inherit;
-
-      /* Corrects inability to style clickable `input` types in iOS */
-      -webkit-appearance: none;
-
-      &:focus { 
-         outline: 0;
-      }
-
-      /* Remove excess padding and border in Firefox 4+ */
-      &::-moz-focus-inner {
-         border: 0;
-         padding: 0;
-      }
-
-      opacity: 0.6;
-   }
-
-   &:hover {
-      &--previous {
-         background: linear-gradient(
-            to right,
-            rgb(0, 0, 0, 1),
-            rgba(0, 0, 0, 0)
-         );
-      }
-
-      &--next {
-         background: linear-gradient(
-            to left,
-            rgb(0, 0, 0, 1),
-            rgba(0, 0, 0, 0)
-         );
-      }
-
-      & button {
-         opacity: 1;
-      }
    }
 
 }
