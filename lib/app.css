@@ -21,7 +21,9 @@ ul {
 }
 
 .test-container {
-   margin: 22px;
+   margin: 22px 22px 88px 22px;
+   padding-bottom: 66px;
+   border-bottom: 1px solid #a2a2a2;
 }
 
 .section {
