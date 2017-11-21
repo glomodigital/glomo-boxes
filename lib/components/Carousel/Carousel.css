@@ -1,9 +1,9 @@
 .glomo-carousel {
-    box-sizing: border-box;
-    position: relative;
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
+   box-sizing: border-box;
+   position: relative;
+   width: 100%;
+   margin: auto;
+   overflow: hidden;
 }
 
 .carousel-wrapper {
@@ -115,19 +115,12 @@
       display: inline-block;
       margin: 0 12px;
       opacity: 0.6;
-      transition: all 0.2s ease-in;
-
-      &:hover {
-         opacity: 1;
-         transform: scale(1.2) translateZ(0);
-         backface-visibility: hidden;
-         mix-blend-mode: normal;
-      }
+      transition: all 0.2s ease;
 
       &-selected,
       &-selected:hover {
          opacity: 1;
-         transform: scale(1.6) translateZ(0);
+         transform: scale(1.4) translateZ(0);
          backface-visibility: hidden;
          mix-blend-mode: normal;
       }
@@ -176,7 +169,7 @@
    /* Corrects inability to style clickable `input` types in iOS */
    -webkit-appearance: none;
 
-   &:focus { 
+   &:focus {
       outline: 0;
    }
 
@@ -185,5 +178,4 @@
       border: 0;
       padding: 0;
    }
-
 }

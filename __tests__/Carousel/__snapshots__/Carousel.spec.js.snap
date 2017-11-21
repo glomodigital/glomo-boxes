@@ -1,117 +1,260 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders without crashing 1`] = `
-<div
-  className={null}
+<Carousel
+  animationType="slide"
+  autoPlay={false}
+  cssEase="ease"
+  height={330}
+  imageLoaded={[Function]}
+  infinite={true}
+  infiniteLoop={true}
+  initializedCarousel={[Function]}
+  intervalDuration={3500}
+  legendClassName={null}
+  onCarouselChange={[Function]}
+  onCarouselItemClick={[Function]}
+  onCarouselMouseEnter={[Function]}
+  onCarouselMouseLeave={[Function]}
+  redirectCallback={null}
+  selectedItem={0}
+  showArrows={true}
+  showIndicators={true}
+  stopOnHover={false}
+  transitionDuration={800}
+  wrapperClassName={null}
 >
   <div
-    className="carousel-wrapper"
-    style={
-      Object {
-        "height": "330px",
-      }
-    }
+    className="glomo-carousel"
   >
     <div
-      className="slider-wrapper"
+      className="carousel-wrapper"
+      style={
+        Object {
+          "height": "330px",
+        }
+      }
     >
-      <ul
-        className="slider"
+      <div
+        className="slider-wrapper"
+      >
+        <ul
+          className="slider"
+          style={
+            Object {
+              "height": "100%",
+              "transform": "translate3d(0px, 0, 0)",
+            }
+          }
+        >
+          <li
+            className="carousel-item "
+            id="item-0"
+            key="item-0"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            style={
+              Object {
+                "width": "0px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "backgroundColor": "red",
+                  "height": "100%",
+                  "width": "100%",
+                }
+              }
+            />
+          </li>
+          <li
+            className="carousel-item "
+            id="item-1"
+            key="item-1"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            style={
+              Object {
+                "width": "0px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "backgroundColor": "blue",
+                  "height": "100%",
+                  "width": "100%",
+                }
+              }
+            />
+          </li>
+          <li
+            className="carousel-item "
+            id="item-2"
+            key="item-2"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            style={
+              Object {
+                "width": "0px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "backgroundColor": "green",
+                  "height": "100%",
+                  "width": "100%",
+                }
+              }
+            />
+          </li>
+          <li
+            className="carousel-item "
+            id="item-3"
+            key="item-3"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            style={
+              Object {
+                "width": "0px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "backgroundColor": "red",
+                  "height": "100%",
+                  "width": "100%",
+                }
+              }
+            />
+          </li>
+          <li
+            className="carousel-item "
+            id="item-4"
+            key="item-4"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            style={
+              Object {
+                "width": "0px",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "backgroundColor": "blue",
+                  "height": "100%",
+                  "width": "100%",
+                }
+              }
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button
+      className="arrow arrow--previous"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      style={
+        Object {
+          "background": "linear-gradient(
+               to right,
+               rgba(0, 0, 0, 0.2),
+               rgba(0, 0, 0, 0)
+            )",
+        }
+      }
+      type="button"
+    >
+      <img
+        alt="previous arrow"
+        height="44px"
+        src="test-file-stub"
         style={
           Object {
-            "height": "100%",
+            "backfaceVisibility": "hidden",
+            "mixBlendMode": "normal",
+            "opacity": 0.4,
+            "transform": "scale(1) translateZ(0)",
+            "transition": "transform 0.3s ease",
           }
         }
-      >
-        <li
-          className="carousel-item"
-          id="item-0"
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          style={Object {}}
-        >
-          <div
-            style={
-              Object {
-                "backgroundColor": "blue",
-                "height": "100%",
-                "width": "100%",
-              }
-            }
-          />
-        </li>
-        <li
-          className="carousel-item"
-          id="item-1"
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          style={Object {}}
-        >
-          <div
-            style={
-              Object {
-                "backgroundColor": "green",
-                "height": "100%",
-                "width": "100%",
-              }
-            }
-          />
-        </li>
-        <li
-          className="carousel-item"
-          id="item-2"
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          style={Object {}}
-        >
-          <div
-            style={
-              Object {
-                "backgroundColor": "red",
-                "height": "100%",
-                "width": "100%",
-              }
-            }
-          />
-        </li>
-        <li
-          className="carousel-item"
-          id="item-3"
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          style={Object {}}
-        >
-          <div
-            style={
-              Object {
-                "backgroundColor": "blue",
-                "height": "100%",
-                "width": "100%",
-              }
-            }
-          />
-        </li>
-      </ul>
-    </div>
+        width="44px"
+      />
+    </button>
+    <button
+      className="arrow arrow--next"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      style={
+        Object {
+          "background": "linear-gradient(
+               to left,
+               rgba(0, 0, 0, 0.2),
+               rgba(0, 0, 0, 0)
+            )",
+        }
+      }
+      type="button"
+    >
+      <img
+        alt="next arrow"
+        height="44px"
+        src="test-file-stub"
+        style={
+          Object {
+            "backfaceVisibility": "hidden",
+            "mixBlendMode": "normal",
+            "opacity": 0.4,
+            "transform": "scale(1) translateZ(0)",
+            "transition": "transform 0.3s ease",
+          }
+        }
+        width="44px"
+      />
+    </button>
     <ul
       className="control-dots"
     >
       <li
         className="dot dot-selected"
+        key="0"
         onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={Object {}}
         value={0}
       />
       <li
         className="dot"
+        key="1"
         onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={Object {}}
         value={1}
       />
       <li
         className="dot"
+        key="2"
         onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={Object {}}
         value={2}
       />
     </ul>
   </div>
-</div>
+</Carousel>
 `;
