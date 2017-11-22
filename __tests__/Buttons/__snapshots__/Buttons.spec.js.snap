@@ -19,7 +19,7 @@ exports[`Button.js component renders without crashing 1`] = `
       "backgroundColor": undefined,
       "border": "2px solid undefined",
       "color": undefined,
-      "padding": "16px 88.76998202440868px",
+      "padding": "8px 28.92008725603475px",
     }
   }
   type="button"
