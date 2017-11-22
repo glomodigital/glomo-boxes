@@ -3,6 +3,9 @@
    flex: 0 0 auto;
    align-items: center;
    justify-content: center;
+   min-width: 88px;
+   min-height: 36px;
+   line-height: 1.4;
 }
 
 .label {
