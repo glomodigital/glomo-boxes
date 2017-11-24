@@ -1,6 +1,12 @@
 .tile-wrapper {
    overflow: hidden;
    position: relative;
+   opacity: 1;
+   transition: opacity 0.3s ease;
+
+   &--inactive {
+      opacity: 0.6;
+   }
 }
 
 .showcase-tile {
@@ -11,8 +17,25 @@
    width: 100%;
 
    & .inner-content {
-      position: relative;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+
+      &--active {
+         opacity: 1;
+      }
    }
+}
+
+.title {
+   font-weight: 900;
+   font-size: 1.4em;
+   line-height: 1;
+}
+
+.subtitle {
+   font-size: 0.9em;
+   line-height: 1;
+   margin-bottom: 22px;
 }
 
 .showcase-tile-image {
