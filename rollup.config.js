@@ -26,6 +26,8 @@ import postcssUrl from 'postcss-url'
 // Convert CJS modules to ES6, so they can be included in a bundle
 import commonjs from 'rollup-plugin-commonjs'
 
+import pkg from './package.json'
+
 const isProd = process.env.NODE_ENV === 'production'
 
 const cssExportMap = {}
@@ -36,7 +38,6 @@ const input_dir = isProd
    ? path.resolve(__dirname, 'lib', 'index.js')
    : path.resolve(__dirname, 'lib', 'app.js')
 
-import pkg from './package.json'
 const external = Object.keys(pkg.dependencies)
 
 let postCssPlugins = [
@@ -97,7 +98,10 @@ let rollupPlugins = [
    }),
 
    // Allow transpilation of future JS
-   babel(),
+   babel({
+      exclude: NODE_MODULES_EXCLUDE,
+      plugins: ['external-helpers'],
+   }),
 
    // limit imports or url() in project
    url({ limit: 10 * 1024, emitFiles: true }),
