@@ -32,21 +32,21 @@ exports[`renders without crashing 1`] = `
         }
       }
     >
-      <h6
+      <span
         className="title"
       >
         Sales & Business Development
-      </h6>
-      <h4
+      </span>
+      <span
         className="name"
       >
         Cecilia Ydremark
-      </h4>
-      <p
+      </span>
+      <span
         className="text"
       >
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
-      </p>
+      </span>
       <div
         className="button-container"
       >
@@ -68,7 +68,8 @@ exports[`renders without crashing 1`] = `
               "backgroundColor": "transparent",
               "border": "2px solid #FFF",
               "color": "#FFF",
-              "padding": "12px 0",
+              "letterSpacing": "3px",
+              "padding": "8px 28.92008725603475px",
             }
           }
         >
@@ -96,7 +97,7 @@ exports[`renders without crashing 1`] = `
               "backgroundColor": "#FFF",
               "border": "2px solid #FFF",
               "color": "#333333",
-              "padding": "12px 0",
+              "padding": "8px 28.92008725603475px",
             }
           }
         >

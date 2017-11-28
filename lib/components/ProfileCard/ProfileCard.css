@@ -9,51 +9,77 @@
    flex-direction: column;
    font-family: inherit;
 }
-.image-container {
-}
+
 .text-container {
    max-width: 530px;
 }
+
 .dark-theme {
    color: #000;
 }
+
 .light-theme {
    color: #fff;
 }
+
 .image {
    width: 100%;
    height: 250px;
    max-width: 100%;
-   margin: 0 auto;
+   margin: 0 auto 34px auto;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
 }
+
+.title,
+.text,
+.name {
+   display: block;
+}
+
 .title {
-   opacity: 0.9;
+   opacity: 0.75;
+   line-height: 1;
+   font-size: 0.75em;
+   margin-bottom: 22px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
 }
+
+.name {
+   opacity: 1;
+   line-height: 1;
+   font-size: 2.2em;
+   margin-bottom: 34px;
+   font-weight: 900;
+}
+
 .text {
-   opacity: 0.9;
+   opacity: 0.75;
+   line-height: inherit;
+   font-size: 1em;
 }
+
 .button-container {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    justify-content: space-between;
+   align-items: flex-start;
    margin: 44px 0 0 0;
+   height: 124px;
 }
 
 .button-container > a {
-   max-width: 45%;
-   width: 230px;
-   font-size: 12px;
    text-transform: uppercase;
-   text-align: center;
 }
+
 @media only screen and (max-width: 767px) and (orientation: landscape) {
    .profile-card-inner {
       width: 70%;
    }
 }
+
 @media only screen and (min-width: 768px) {
    .profile-card-inner {
       max-width: 1057px;
@@ -71,14 +97,6 @@
       flex: 1;
    }
    .title {
-      margin-top: 0;
-   }
-   .button-container {
-      flex-direction: column;
-      height: 130px;
-   }
-   .button-container > a {
-      max-width: none;
-      font-size: 18px;
+      font-size: 0.9em;
    }
 }
