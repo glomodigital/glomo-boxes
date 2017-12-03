@@ -63,15 +63,6 @@ let rollupPlugins = [
       ),
    }),
 
-   resolve({
-      customResolveOptions: {
-         moduleDirectory: 'node_modules',
-      },
-      jsnext: true,
-      main: true,
-      browser: true,
-   }),
-
    // postcss for styles using numerous plugins for sass like syntax
    postcss({
       sourceMap: 'inline',
@@ -80,6 +71,22 @@ let rollupPlugins = [
       getExport(id) {
          return cssExportMap[id]
       },
+   }),
+
+   // Allow transpilation of future JS
+   babel({
+      exclude: NODE_MODULES_EXCLUDE,
+      externalHelpers: false,
+      runtimeHelpers: true,
+   }),
+
+   resolve({
+      customResolveOptions: {
+         moduleDirectory: 'node_modules',
+      },
+      jsnext: true,
+      main: true,
+      browser: true,
    }),
 
    commonjs({
@@ -95,12 +102,6 @@ let rollupPlugins = [
          ],
          'node_modules/react-dom/index.js': ['findDOMNode'],
       },
-   }),
-
-   // Allow transpilation of future JS
-   babel({
-      exclude: NODE_MODULES_EXCLUDE,
-      plugins: ['external-helpers'],
    }),
 
    // limit imports or url() in project
