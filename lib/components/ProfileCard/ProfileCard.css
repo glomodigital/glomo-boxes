@@ -72,11 +72,21 @@
 
 .button-container > a {
    text-transform: uppercase;
+   width: 100%;
 }
 
 @media only screen and (max-width: 767px) and (orientation: landscape) {
    .profile-card-inner {
       width: 70%;
+   }
+   .button-container {
+      flex-direction: row;
+      height: auto;
+   }
+   .button-container > a {
+      width: 48%;
+      height: 46px;
+      font-size: 14px;
    }
 }
 
@@ -95,6 +105,10 @@
    }
    .text-container {
       flex: 1;
+   }
+   .button-container > a {
+      text-transform: uppercase;
+      width: 230px;
    }
    .title {
       font-size: 0.9em;
