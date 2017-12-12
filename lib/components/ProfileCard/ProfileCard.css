@@ -26,7 +26,7 @@
    width: 100%;
    height: 250px;
    max-width: 100%;
-   margin: 0 auto 34px auto;
+   margin: 0 auto 34px 0;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -92,7 +92,6 @@
 
 @media only screen and (min-width: 768px) {
    .profile-card-inner {
-      max-width: 1057px;
       padding: 105px 0 190px 0;
       flex-direction: row;
    }
@@ -112,5 +111,10 @@
    }
    .title {
       font-size: 0.9em;
+   }
+}
+@media only screen and (min-width: 980px) {
+   .profile-card-inner {
+      width: 66%;
    }
 }
