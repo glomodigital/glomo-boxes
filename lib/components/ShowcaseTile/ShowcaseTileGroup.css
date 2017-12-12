@@ -89,6 +89,12 @@
             opacity: 1;
             transform: translateY(0);
          }
+         &--active {
+            flex: 100;
+         }
+         &--inactive {
+            flex: 0;
+         }
       }
    }
 }
@@ -107,18 +113,19 @@
    position: absolute;
    top: 0;
    opacity: 0;
+   z-index: 0;
    pointer-events: none;
    transition: opacity 0.42s cubic-bezier(0.25, 0.145, 0.18, 1),
       transform 0.42s cubic-bezier(0.25, 0.145, 0.18, 1);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center;
-   transform: translate3d(0, -30%, 0);
-
+   /*transform: translate3d(0, -30%, 0);*/
+   transition-delay: 0;
    &--active {
+      transition-delay: 200ms;
       opacity: 1;
       z-index: 1;
-      width: 100%;
-      transform: translate3d(0, 0, 0);
+      /*transform: translate3d(0, 0, 0);*/
    }
 }
