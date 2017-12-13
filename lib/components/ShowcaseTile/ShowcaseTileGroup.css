@@ -128,7 +128,7 @@
    background-size: cover;
    background-position: center center;
    /*transform: translate3d(0, -30%, 0);*/
-   transition-delay: 0;
+   transition-delay: 500ms;
    &--active {
       transition-delay: 200ms;
       opacity: 1;
