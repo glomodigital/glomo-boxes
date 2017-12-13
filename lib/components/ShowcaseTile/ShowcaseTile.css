@@ -2,7 +2,7 @@
    overflow: hidden;
    position: relative;
    opacity: 1;
-
+   height: 100%;
    &--inactive {
       & .title,
       & .subtitle {
@@ -45,7 +45,10 @@
       opacity: 0.6;
    }
 }
-
+.showcase-excerpt {
+   max-width: 100%;
+   display: block;
+}
 .title {
    font-weight: 900;
    font-size: 1.4em;

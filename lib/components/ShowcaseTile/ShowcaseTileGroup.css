@@ -69,7 +69,14 @@
       position: relative;
       z-index: 3;
    }
-
+   &-section {
+      height: 400px;
+      width: 100%;
+      &-desktop {
+         height: auto;
+         width: 25%;
+      }
+   }
    &-bgimage {
       position: absolute;
       top: 0;
