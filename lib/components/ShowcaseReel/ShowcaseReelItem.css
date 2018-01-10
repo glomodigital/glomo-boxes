@@ -6,26 +6,38 @@
 .hexagon-wrapper {
    transform: scale(1) translateY(-20px);
    transition: all 0.2s ease-in-out;
+   filter: brightness(1.2) opacity(0.97);
+
    @media screen and (min-width: 900px) {
       transform: scale(1) translateY(0);
+      filter: none;
    }
 }
 .hexagon-wrapper--mounted {
    transform: scale(1) translateY(-20px);
+   transition: all 0.2s ease-in-out;
+   filter: brightness(1.2) opacity(0.97);
    @media screen and (min-width: 900px) {
       transform: scale(1) translateY(0);
+      filter: none;
    }
 }
 .hexagon-wrapper--unmounted {
    transform: scale(0.4) translateY(-20px);
+   transition: all 0.2s ease-in-out;
+   filter: brightness(1.2) opacity(0.97);
    @media screen and (min-width: 900px) {
       transform: scale(0.4) translateY(0);
+      filter: none;
    }
 }
 .hexagon-wrapper--active {
    transform: scale(1.05) translateY(-20px);
+   transition: all 0.2s ease-in-out;
+   filter: brightness(1.2) opacity(0.97);
    @media screen and (min-width: 900px) {
       transform: scale(1.05) translateY(0);
+      filter: none;
    }
 }
 
@@ -63,11 +75,20 @@
    bottom: -20%;
    pointer-events: none;
    z-index: -2;
-   opacity: 0.8;
+   opacity: 0;
    transition: opacity 0.15s ease-in-out;
+
+   &--left {
+      background: linear-gradient(-90deg, transparent, #fff 70%, transparent);
+   }
+
+   &--right {
+      background: linear-gradient(90deg, transparent, #fff 70%, transparent);
+   }
 
    @media screen and (min-width: 900px) {
       width: 300px;
+      opacity: 0.8;
 
       &--active {
          width: 400px;
