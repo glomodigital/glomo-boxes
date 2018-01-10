@@ -51,29 +51,3 @@
    z-index: 20;
    opacity: 1;
 }
-
-.mobile-overlay {
-   width: 10%;
-   height: 100%;
-   position: absolute;
-   top: 0;
-   z-index: 5;
-
-   &--left {
-      left: 0;
-      background: linear-gradient(
-         to right,
-         rgba(255, 255, 255, 0.75),
-         rgba(255, 255, 255, 0)
-      );
-   }
-
-   &--right {
-      right: 0;
-      background: linear-gradient(
-         to left,
-         rgba(255, 255, 255, 0.75),
-         rgba(255, 255, 255, 0)
-      );
-   }
-}
