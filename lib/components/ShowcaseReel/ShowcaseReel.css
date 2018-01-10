@@ -18,6 +18,7 @@
       display: block;
       height: 740px;
       margin-right: 0;
+      overflow-x: hidden;
    }
 }
 
@@ -28,11 +29,11 @@
    opacity: 0.9;
 
    &:nth-child(even) {
-      margin: 0 7%;
+      margin: 0 0 0 3%;
    }
 
    &:nth-child(odd) {
-      margin: 2em 7% 0 7%;
+      margin: 3em 0 0 3%;
    }
 
    @media screen and (min-width: 900px) {
