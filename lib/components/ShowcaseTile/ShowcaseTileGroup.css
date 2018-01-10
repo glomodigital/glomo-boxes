@@ -96,12 +96,12 @@
             opacity: 1;
             transform: translateY(0);
          }
-         &--active {
+         /* &--active {
             flex: 100;
          }
          &--inactive {
             flex: 0;
-         }
+         }*/
       }
    }
 }
@@ -128,11 +128,11 @@
    background-size: cover;
    background-position: center center;
    /*transform: translate3d(0, -30%, 0);*/
-   transition-delay: 500ms;
+   /*transition-delay: 500ms;*/
    &--active {
       transition-delay: 200ms;
       opacity: 1;
       z-index: 1;
-      /*transform: translate3d(0, 0, 0);*/
+      transform: translate3d(0, 0, 0);
    }
 }
