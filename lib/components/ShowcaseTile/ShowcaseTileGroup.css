@@ -115,24 +115,31 @@
 }
 
 .showcase-fullwidth {
-   width: 100%;
-   height: 100%;
    position: absolute;
-   top: 0;
+   top: 50%;
+   left: 50%;
+   width: auto;
+   height: auto;
+   min-width: 100%;
+   min-height: 100%;
    opacity: 0;
    z-index: 0;
    pointer-events: none;
-   transition: opacity 0.42s cubic-bezier(0.25, 0.145, 0.18, 1),
-      transform 0.42s cubic-bezier(0.25, 0.145, 0.18, 1);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
-   /*transform: translate3d(0, -30%, 0);*/
-   /*transition-delay: 500ms;*/
+   transform: translateX(-50%) translateY(-50%);
+   &--image {
+      transition: opacity 0.42s cubic-bezier(0.25, 0.145, 0.18, 1),
+         transform 0.42s cubic-bezier(0.25, 0.145, 0.18, 1);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+   }
+   &--video {
+      background-size: cover;
+      transition: 1s opacity;
+   }
    &--active {
       transition-delay: 200ms;
       opacity: 1;
       z-index: 1;
-      transform: translate3d(0, 0, 0);
    }
 }
