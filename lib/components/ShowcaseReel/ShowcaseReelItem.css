@@ -87,7 +87,7 @@
    bottom: -20%;
    pointer-events: none;
    z-index: -2;
-   opacity: 0;
+   opacity: 1;
    transition: opacity 0.15s ease-in-out;
 
    &--left {
