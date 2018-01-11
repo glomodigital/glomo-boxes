@@ -9,9 +9,10 @@
    position: relative;
    display: flex;
    flex-wrap: nowrap;
-   overflow-x: auto;
+   overflow-x: scroll;
    overflow-y: hidden;
    align-items: center;
+   -webkit-overflow-scrolling: touch;
    height: 325px;
 
    @media screen and (min-width: 900px) {
