@@ -50,6 +50,7 @@
    height: 100%;
    visibility: visible;
    transition: transform 0.2s ease-in;
+   max-width: 80%;
 
    &--right,
    &--left {
@@ -64,6 +65,7 @@
       position: absolute;
       padding-top: 5%;
       width: 75%;
+      max-width: 100%;
 
       &--right {
          right: 0;
@@ -97,7 +99,7 @@
 
    @media screen and (min-width: 900px) {
       width: 300px;
-      opacity: 0.8;
+      opacity: 0.7;
 
       &--active {
          width: 400px;
@@ -105,6 +107,13 @@
          top: -20%;
          bottom: -20%;
          transform: scale(1.4);
+      }
+      &--left {
+         background: linear-gradient(-90deg, transparent, #fff 70%);
+      }
+
+      &--right {
+         background: linear-gradient(90deg, transparent, #fff 70%);
       }
    }
 }
