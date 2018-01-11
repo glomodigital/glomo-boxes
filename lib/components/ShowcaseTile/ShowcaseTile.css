@@ -48,6 +48,7 @@
 .showcase-excerpt {
    max-width: 100%;
    display: block;
+   margin: 2rem 0 0 0;
 }
 .title {
    font-weight: 900;
@@ -76,4 +77,9 @@
    align-items: center;
    justify-content: center;
    overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+   .showcase-excerpt {
+      line-height: 1.4;
+   }
 }
