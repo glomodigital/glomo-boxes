@@ -3,6 +3,7 @@
    position: relative;
    cursor: pointer;
    overflow: hidden;
+   min-height: 600px;
 }
 
 .showcase-placeholder {
@@ -68,6 +69,7 @@
    &-content {
       position: relative;
       z-index: 3;
+      min-height: 600px;
    }
    &-section {
       height: 400px;
