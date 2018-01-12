@@ -62,6 +62,10 @@
       visibility: hidden;
    }
 
+   @media screen and (max-height: 400px) {
+      padding-top: 7em;
+   }
+
    @media screen and (min-width: 900px) {
       position: absolute;
       padding-top: 5%;
@@ -145,6 +149,10 @@
    font-weight: 900;
    text-transform: uppercase;
    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.2);
+
+   @media screen and (max-height: 400px) {
+      font-size: 1.5em;
+   }
 
    @media screen and (min-width: 900px) {
       font-size: 2.5em;
