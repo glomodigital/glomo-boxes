@@ -4,7 +4,6 @@
    cursor: pointer;
    overflow: hidden;
    min-height: 600px;
-   /* transform: translate3d(0,0,0); */
 }
 
 .showcase-placeholder {
@@ -17,7 +16,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   /* z-index: 10; */
+   z-index: 10;
    opacity: 1;
    visibility: visible;
    transition: opacity 0.42s cubic-bezier(0.25, 0.145, 0.18, 1);
@@ -53,7 +52,6 @@
    position: absolute;
    top: 0;
    left: 0;
-   /* z-index: 2; */
 }
 
 .showcase-tile {
@@ -69,11 +67,11 @@
 
    &-content {
       position: relative;
-      /* z-index: 3; */
+      z-index: 3;
       min-height: 600px;
    }
    &-section {
-      height: 400px;
+      height: 320px;
       width: 100%;
       &-desktop {
          height: auto;
@@ -143,6 +141,5 @@
    &--active {
       transition-delay: 200ms;
       opacity: 1;
-      /* z-index: 1; */
    }
 }

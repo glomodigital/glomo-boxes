@@ -79,9 +79,10 @@
    justify-content: center;
    overflow: hidden;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
    .showcase-excerpt {
       line-height: 1.4;
+      margin: 12px 0;
       font-size: 16px;
    }
 }
