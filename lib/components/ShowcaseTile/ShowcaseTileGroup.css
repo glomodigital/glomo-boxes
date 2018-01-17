@@ -74,7 +74,7 @@
       min-height: 600px;
    }
    &-section {
-      height: 320px;
+      height: 360px;
       width: 100%;
       &-desktop {
          height: auto;
