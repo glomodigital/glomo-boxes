@@ -3,11 +3,11 @@
    "version": "1.8.11",
    "description": "Glomo UI modules built in react",
    "bugs": {
-      "url": "https://github.com/globalmouth/glomo-boxes/issues"
+      "url": "https://github.com/glomodigital/glomo-boxes/issues"
    },
    "repository": {
       "type": "git",
-      "url": "https://github.com/globalmouth/glomo-boxes"
+      "url": "https://github.com/glomodigital/glomo-boxes"
    },
    "main": "build/index.js",
    "scripts": {
