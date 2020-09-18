@@ -43,14 +43,11 @@
       "react-dom": "^15.0.0 || ^16.0.0"
    },
    "dependencies": {
-      "@babel/preset-react": "^7.0.0",
       "create-react-class": "^15.6.2",
-      "glomo-boxes": "^1.9.1",
       "prop-types": "^15.6.0",
       "react": "^16.0.0",
       "react-dom": "^16.0.0",
-      "react-tappable": "^1.0.2",
-      "rollup-pluginutils": "^2.8.2"
+      "react-tappable": "^1.0.2"
    },
    "devDependencies": {
       "babel-jest": "^21.2.0",
