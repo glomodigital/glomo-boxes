@@ -2408,6 +2408,20 @@ glomo-boxes@^1.8.20:
     react-tappable "^1.0.2"
     rollup-pluginutils "^2.8.2"
 
+glomo-boxes@^1.9.1:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/glomo-boxes/-/glomo-boxes-1.9.1.tgz#01a3a74ea89862c5f1e667787b96a2bc9291e293"
+  integrity sha512-iaUoNPnAsuxH4rHB5YGswLMODOXpwcHb+yPUzUS2T1eJ+dzW5n70eSPiZarTDeOwTZhrmEn7/RD9jmsMm7HS2g==
+  dependencies:
+    "@babel/preset-react" "^7.0.0"
+    create-react-class "^15.6.2"
+    glomo-boxes "^1.8.20"
+    prop-types "^15.6.0"
+    react "^16.0.0"
+    react-dom "^16.0.0"
+    react-tappable "^1.0.2"
+    rollup-pluginutils "^2.8.2"
+
 graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
