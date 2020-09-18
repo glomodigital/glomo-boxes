@@ -16,6 +16,10 @@
    max-width: 530px;
 }
 
+.sub-text {
+   margin-left: 40px;
+}
+
 .dark-theme {
    color: #000;
 }
