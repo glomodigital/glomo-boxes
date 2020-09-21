@@ -2395,13 +2395,14 @@ globby@^6.1.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
-glomo-boxes@^1.8.20:
-  version "1.8.20"
-  resolved "https://registry.yarnpkg.com/glomo-boxes/-/glomo-boxes-1.8.20.tgz#9c64de48cdf3de9b31ea3a6792ab780939129804"
-  integrity sha512-gAx7AfE/i3QgwGLwublhljBuykDhldwF8FlyKmzQxMY85C4n02jEDwpGa5U1x3UqXgkdWya4VHyoqTypMg1/HA==
+glomo-boxes@^1.9.4:
+  version "1.9.5"
+  resolved "https://registry.yarnpkg.com/glomo-boxes/-/glomo-boxes-1.9.5.tgz#c7884d9824fadd7995a341febd254ce88e196649"
+  integrity sha512-ebrwy1tlJOFC0iku1g3BBdGzzPanWnH7y633GJ86Cc5zGHqBUguQhCRyPoJkPm5vlvU0LlxLtTyav8d3hQcfKw==
   dependencies:
     "@babel/preset-react" "^7.0.0"
     create-react-class "^15.6.2"
+    glomo-boxes "^1.9.4"
     prop-types "^15.6.0"
     react "^16.0.0"
     react-dom "^16.0.0"
