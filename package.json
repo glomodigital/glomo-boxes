@@ -1,6 +1,6 @@
 {
 	"name": "glomo-boxes",
-	"version": "1.9.4",
+	"version": "1.9.5",
 	"description": "Glomo UI modules built in react",
 	"bugs": {
 		"url": "https://github.com/glomodigital/glomo-boxes/issues"
@@ -24,7 +24,10 @@
 		"build": "NODE_ENV=production rollup -c"
 	},
 	"lint-staged": {
-		"lib/**/*.{js,jsx,json,css}": [ "prettier --write", "git add" ]
+		"lib/**/*.{js,jsx,json,css}": [
+			"prettier --write",
+			"git add"
+		]
 	},
 	"prettier": {
 		"printWidth": 80,
