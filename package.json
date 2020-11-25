@@ -65,7 +65,7 @@
 		"enzyme": "^3.2.0",
 		"enzyme-adapter-react-16": "^1.1.0",
 		"enzyme-to-json": "^3.2.2",
-		"highlight.js": "^9.12.0",
+		"highlight.js": "^10.1.2",
 		"husky": "^0.14.3",
 		"identity-obj-proxy": "^3.0.0",
 		"jest": "^21.2.1",
